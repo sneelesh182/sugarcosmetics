@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/414ae88f0d.js" crossorigin="anonymous"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        background-color: #f2f2f2;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      div#container {
+        max-width: 1400px;
+        width: 100%;
+        margin: auto;
+      }
+      div#container > div:nth-of-type(1) {
+        max-width: 1300px;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        place-items: center;
+      }
+      div#container > div:nth-of-type(1) > div > span {
+        width: 70px;
+        border: 1px solid #ec3f78;
+      }
+      div#container > div:nth-of-type(1) > div#grid {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 16px;
+        box-sizing: border-box;
+        padding:20px;
+      }
+      div#container > div:nth-of-type(1) > div#grid > div {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 12px;
+        box-sizing: border-box;
+      }
+      div#container > div:nth-of-type(1) > div#grid > div > img {
+        border-radius: 15px;
+      }
+      .offers {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      div.coupon{
+        margin-top:5px;
+        display:flex;
+        justify-content: flex-end;
+      }
+      div.coupon>div:nth-of-type(1)
+      {
+        box-sizing:border-box;
+        padding:12px 10px;
+        border:1px dashed #ed5695;
+        border-right:none;
+        color:#ed5695;
+        background-color: #fbe7f1;
+       font-weight:600;
+       font-size:14px;
+       border-top-left-radius: 8px;
+       border-bottom-left-radius: 8px;
+      }
+      div.coupon>div:nth-of-type(2)
+      {
+        box-sizing:border-box;
+        padding:10px;
+        border:1px dashed #ed5695;
+        background-color: #fbe7f1;
+        border-top-right-radius: 8px;
+       border-bottom-right-radius: 8px;
+      }
+      @media (min-width:220px) and (max-width:480px)
+      {
+        div#container > div:nth-of-type(1) > div#grid{
+            grid-template-columns: repeat(1,1fr);
+        }
+      }
+      @media (min-width:481px) and (max-width:760px)
+      {
+        div#container > div:nth-of-type(1) > div#grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+      }
+      @media (min-width:761px) and (max-width:1024px)
+      {
+        div#container > div:nth-of-type(1) > div#grid{
+            grid-template-columns: repeat(3,1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <div class="offers">
+          <span></span>
+          <h2>OFFERS</h2>
+          <span></span>
+        </div>
+
+        <div id="grid">
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/ac60caec-9403-4557-94de-11473c8d8d94.jpg"
+              alt="img"
+            />
+            <div class="coupon"><div>DEAL 300</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/25148f7d-24c0-41c1-a524-ccd451865e03.jpg"
+              alt="img1"
+            />
+            <div class="coupon"><div>DEALS599</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/6c18165f-dccf-49b8-abcf-87e233337c46.jpg"
+              alt="img2"
+            />
+            <div class="coupon"><div>FACEPRMR</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/4a8296f5-1519-4681-b68d-08e487eb887f.jpg"
+              alt="img3"
+            />
+            <div class="coupon"><div>SLINGBLING999</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/8adc6909-ac53-4df0-8a3e-50b0f5473586.jpg"
+              alt=""
+            />
+            <div class="coupon"><div>POWDERS799</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/ac60caec-9403-4557-94de-11473c8d8d94.jpg"
+              alt="img"
+            />
+            <div class="coupon"><div>PALETTE1299</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/4a8296f5-1519-4681-b68d-08e487eb887f.jpg"
+              alt="img3"
+            />
+            <div class="coupon"><div>WOMENSDAY</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/ac60caec-9403-4557-94de-11473c8d8d94.jpg"
+              alt="img"
+            />
+            <div class="coupon"><div>CAPRESEBAG</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/6c18165f-dccf-49b8-abcf-87e233337c46.jpg"
+              alt="img2"
+            />
+            <div class="coupon"><div>SUGARXJBL2299</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/4a8296f5-1519-4681-b68d-08e487eb887f.jpg"
+              alt="img3"
+            />
+            <div class="coupon"><div>SUGAR3999</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://d32baadbbpueqt.cloudfront.net/Promotion/ac60caec-9403-4557-94de-11473c8d8d94.jpg"
+              alt="img"
+            />
+            <div class="coupon"><div>SHARKTANK2024</div>
+            <div><i class="fa-regular fa-copy"></i></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
